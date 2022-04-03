@@ -8,7 +8,7 @@ data = pd.read_csv('dataset.csv').values
 init_cent = [[0, 1], [9, 6]]
 
 # Init and Train Kmeans
-kmeans = Kmeans(data, n_cluster=2)
+kmeans = Kmeans(data, n_cluster=2, init_centroid=init_cent)
 
 
 # plotting Kmeans
